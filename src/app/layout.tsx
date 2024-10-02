@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Banner from '@hackclub/banner'
+import Navigation from "@/components/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,6 +45,7 @@ export default function RootLayout({
         >
           <Banner />
           {children}
+          <Navigation />
         </ThemeProvider>
       </body>
     </html>
