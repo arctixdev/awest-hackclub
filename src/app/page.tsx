@@ -124,16 +124,18 @@ const Notification = ({ name, description, icon, color }: Item) => {
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between p-16 pt-24 max-w-7xl my-auto">
-      {/* <AnimatedGridPattern
-        numSquares={50}
-        maxOpacity={0.2}
-        duration={3}
-        repeatDelay={1}
-        className={cn(
-          "[mask-image:radial-gradient(750px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-50%] h-[200%] skew-y-12 overflow-hidden"
-        )}
-      /> */}
+      <div style={{ overflow: 'hidden' }}>
+        <AnimatedGridPattern
+          numSquares={100}
+          maxOpacity={0.2}
+          duration={3}
+          repeatDelay={0.8}
+          className={cn(
+            "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
+            "inset-x-0 skew-y-12 overflow-hidden w-screen h-screen"
+          )}
+        />
+      </div>
       <div className="gap-6 flex flex-col py-20 md:py-0">
         <div className="flex flex-row gap-6 flex-wrap min-[1070px]:flex-nowrap items-stretch self-stretch">
           <div className="rounded-[29px] md:min-w-[660px] self-stretch ">
