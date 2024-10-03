@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Banner from '@hackclub/banner'
 import Navigation from "@/components/navigation";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -49,6 +50,7 @@ export default function RootLayout({
             <Navigation />{" "}
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
