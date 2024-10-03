@@ -124,7 +124,7 @@ const Notification = ({ name, description, icon, color }: Item) => {
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between p-16 pt-24 max-w-7xl my-auto">
-      <div style={{ overflow: 'hidden' }}>
+      <div style={{ overflow: "hidden" }}>
         <AnimatedGridPattern
           numSquares={100}
           maxOpacity={0.2}
@@ -132,7 +132,7 @@ export default function Home() {
           repeatDelay={0.8}
           className={cn(
             "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
-            "inset-x-0 skew-y-12 overflow-hidden w-screen h-screen"
+            "inset-x-0 skew-y-12 overflow-hidden w-screen h-screen max-h-screen"
           )}
         />
       </div>
@@ -176,11 +176,11 @@ export default function Home() {
               gradientColor="#E7EEFF"
             >
               <h1 className="text-3xl lg:text-4xl text-[#224597] font-bold text-left">
-                Benifits!
+                Benefits!
               </h1>
 
               <p className="py-4 xl:mr-12 text-lg">
-                As a coding club you enjoy lots of free benifits! This includes:
+                As a coding club you enjoy lots of free benefits! This includes:
                 Stickers, Servers, Brilliant premium, Figma premium, Snacks,
                 boba, PCB&apos;s & Game consoles
               </p>
@@ -239,7 +239,7 @@ export default function Home() {
               </h1>
 
               <p className="py-4 xl:mr-12 text-lg">
-                August 3rd at 2:40 PM in N134 We&apos;ll be learning to make
+                October 3rd at 2:40 PM in N134 We&apos;ll be learning to make
                 cool websites, no expereince neccesarry! Earn free boba tea when
                 you finish the website :)
               </p>
