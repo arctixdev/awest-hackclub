@@ -40,7 +40,6 @@ const slugs = [
   "figma",
 ];
 
-
 let notifications = [
   {
     name: "Onboard",
@@ -56,15 +55,13 @@ let notifications = [
   },
   {
     name: "The Bin",
-    description:
-      "Design cool electronics using random parts",
+    description: "Design cool electronics using random parts",
     icon: "🔌",
     color: "gray",
   },
   {
     name: "Blot",
-    description:
-      "Draw art using code, get a free drawing machine.",
+    description: "Draw art using code, get a free drawing machine.",
     icon: "✏️",
     color: "yellow",
   },
@@ -81,7 +78,6 @@ let notifications = [
     color: "green",
   },
 ];
-
 
 notifications = Array.from({ length: 10 }, () => notifications).flat();
 
@@ -127,129 +123,126 @@ const Notification = ({ name, description, icon, color }: Item) => {
 
 export default function Home() {
   return (
-  <div className="overflow-hidden">
-      <div className="relative flex h-screen w-full items-center justify-center overflow-x-hidden bg-background p-20">
-        <div className="overflow-hidden">
-                <AnimatedGridPattern
+    <main className="flex flex-col items-center justify-between p-16 pt-24 max-w-7xl my-auto">
+      {/* <AnimatedGridPattern
         numSquares={50}
         maxOpacity={0.2}
         duration={3}
         repeatDelay={1}
         className={cn(
           "[mask-image:radial-gradient(750px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-50%] h-[200%] skew-y-12 overflow-hidden",
+          "inset-x-0 inset-y-[-50%] h-[200%] skew-y-12 overflow-hidden"
         )}
-    />
-        </div>
-    <div className="gap-6 flex flex-col w-3/4 h-fit">
-          <div className="flex flex-row gap-6 flex-wrap min-[1070px]:flex-nowrap items-stretch self-stretch">
-            <div className="rounded-[29px] md:min-w-[660px] self-stretch ">
-              <MagicCard
-                className="flex justify-between rounded-[29px] flex-col p-7 gap-4 h-80 bg-[#FFF9F9]"
-                gradientColor="#FFE9E9"
-              >
-                <TypingAnimation
-                  className="text-4xl lg:text-5xl text-[#EC3750] font-bold text-left"
-                  text="We are teen coders from Arvada West High School"
-                  duration={50}
-                />
+      /> */}
+      <div className="gap-6 flex flex-col py-20 md:py-0">
+        <div className="flex flex-row gap-6 flex-wrap min-[1070px]:flex-nowrap items-stretch self-stretch">
+          <div className="rounded-[29px] md:min-w-[660px] self-stretch ">
+            <MagicCard
+              className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#FFF9F9]"
+              gradientColor="#FFE9E9"
+            >
+              <TypingAnimation
+                className="text-4xl lg:text-5xl text-[#EC3750] font-bold text-left"
+                text="We are teen coders from Arvada West High School"
+                duration={50}
+              />
 
-                <p className="py-4 mr-12 text-lg">
-                  Whether you’re a beginner programmer or have years of
-                  experience, there’s a place for you at the Coding Club!.
-                </p>
-                <div className="flex justify-end w-full items-center space-x-4 pt-8 xl:pt-0">
-                  <AnimatedShinyText className="text-[#EC3750] w-full flex justify-end ">
-                    <span>Are you ready?</span>
-                  </AnimatedShinyText>
-                  <a
-                    href="https://classroom.google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="px-4 py-3 bg-[#EC3750] text-white text-lg font-semibold rounded-2xl">
-                      Join the Google Classroom (TBD)
-                    </Button>
-                  </a>
-                </div>
-              </MagicCard>
-            </div>
-
-            <div className="rounded-[29px] md:min-w-[300px] self-stretch flex grow ">
-              <MagicCard
-                className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#F5F8FF] h-80"
-                gradientColor="#E7EEFF"
-              >
-                <h1 className="text-3xl lg:text-4xl text-[#224597] font-bold text-left">
-                  Benifits!
-                </h1>
-
-                <p className="py-4 xl:mr-12 text-lg">
-                  As a coding club you enjoy lots of free benifits! This includes: Stickers, Servers, Brilliant premium, Figma premium, Snacks, boba, PCB&apos;s & Game consoles
-                </p>
-                <div className="flex justify-between w-full items-end space-x-4">
-
-                </div>
-              </MagicCard>
-            </div>
+              <p className="py-4 mr-12 text-lg">
+                Whether you’re a beginner programmer or have years of
+                experience, there’s a place for you at the Coding Club!.
+              </p>
+              <div className="flex justify-end w-full items-center space-x-4 pt-8 xl:pt-0">
+                <AnimatedShinyText className="text-[#EC3750] w-full flex justify-end ">
+                  <span>Are you ready?</span>
+                </AnimatedShinyText>
+                <a
+                  href="https://classroom.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="px-4 py-3 bg-[#EC3750] text-white text-lg font-semibold rounded-2xl">
+                    Join the Google Classroom (TBD)
+                  </Button>
+                </a>
+              </div>
+            </MagicCard>
           </div>
 
-          <div className="flex flex-row gap-6 flex-wrap min-[1070px]:flex-nowrap items-stretch self-stretch">
-            <div className="rounded-[29px] md:min-w-[300px] self-stretch grow flex">
-              <MagicCard
-                className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#ffffff] h-80"
-                gradientColor="#F5F5F5"
-              >
-                <h1 className="text-3xl lg:text-4xl text-[#000000] font-bold text-left">
-                  Code in any platform
-                </h1>
-                <div className="w-full flex items-center justify-center">
-                  <div className=" max-h-80 max-w-80 flex">
-                    <IconCloud iconSlugs={slugs} />
-                  </div>
+          <div className="rounded-[29px] md:min-w-[300px] self-stretch flex grow ">
+            <MagicCard
+              className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#F5F8FF]"
+              gradientColor="#E7EEFF"
+            >
+              <h1 className="text-3xl lg:text-4xl text-[#224597] font-bold text-left">
+                Benifits!
+              </h1>
+
+              <p className="py-4 xl:mr-12 text-lg">
+                As a coding club you enjoy lots of free benifits! This includes:
+                Stickers, Servers, Brilliant premium, Figma premium, Snacks,
+                boba, PCB&apos;s & Game consoles
+              </p>
+              <div className="flex justify-between w-full items-end space-x-4"></div>
+            </MagicCard>
+          </div>
+        </div>
+
+        <div className="flex flex-row gap-6 flex-wrap min-[1070px]:flex-nowrap items-stretch self-stretch lg:max-h-96">
+          <div className="rounded-[29px] md:min-w-[300px] self-stretch grow flex">
+            <MagicCard
+              className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#ffffff]"
+              gradientColor="#F5F5F5"
+            >
+              <h1 className="text-3xl lg:text-4xl text-[#000000] font-bold text-left">
+                Code in any platform
+              </h1>
+              <div className="w-full flex items-center justify-center">
+                <div className=" max-h-80 max-w-80 flex">
+                  <IconCloud iconSlugs={slugs} />
                 </div>
-              </MagicCard>
-            </div>
+              </div>
+            </MagicCard>
+          </div>
 
-            <div className="rounded-[29px] md:min-w-[300px] self-stretch grow flex">
-              <MagicCard
-                className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#ffffff] h-80"
-                gradientColor="#F5F5F5"
+          <div className="rounded-[29px] md:min-w-[300px] self-stretch grow flex">
+            <MagicCard
+              className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#ffffff]"
+              gradientColor="#F5F5F5"
+            >
+              <h1 className="text-3xl lg:text-4xl text-[#000000] font-bold text-left">
+                Coding Fun
+              </h1>
+
+              <div
+                className={cn(
+                  "relative flex h-[500px] w-full flex-col pt-6 px-0.5 items-center"
+                )}
               >
-                <h1 className="text-3xl lg:text-4xl text-[#000000] font-bold text-left">
-                  Coding Fun
-                </h1>
+                <AnimatedList delay={2000}>
+                  {notifications.map((item, idx) => (
+                    <Notification {...item} key={idx} />
+                  ))}
+                </AnimatedList>
+              </div>
+            </MagicCard>
+          </div>
 
-                <div
-                  className={cn(
-                    "relative flex h-[500px] w-full flex-col pt-6 px-0.5 items-center"
-                  )}
-                >
-                  <AnimatedList delay={2000}>
-                    {notifications.map((item, idx) => (
-                      <Notification {...item} key={idx} />
-                    ))}
-                  </AnimatedList>
-                </div>
-              </MagicCard>
-            </div>
+          <div className="rounded-[29px] md:min-w-[300px] self-stretch flex grow">
+            <MagicCard
+              className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#FCF4FD] mb-20 md:mb-0"
+              gradientColor="#FCE4FF"
+            >
+              <h1 className="text-3xl lg:text-4xl text-[#742294] font-bold text-left">
+                Come to our next meeting
+              </h1>
 
-            <div className="rounded-[29px] md:min-w-[300px] self-stretch flex grow">
-              <MagicCard
-                className="flex justify-between rounded-[29px] flex-col p-7 gap-4 bg-[#FCF4FD] mb-20 md:mb-0"
-                gradientColor="#FCE4FF"
-              >
-                <h1 className="text-3xl lg:text-4xl text-[#742294] font-bold text-left">
-                  Come to our next meeting
-                </h1>
+              <p className="py-4 xl:mr-12 text-lg">
+                August 3rd at 2:40 PM in N134 We&apos;ll be learning to make
+                cool websites, no expereince neccesarry! Earn free boba tea when
+                you finish the website :)
+              </p>
 
-                <p className="py-4 xl:mr-12 text-lg">
-              August 3rd at 2:40 PM in N134
-              We&apos;ll be learning to make cool websites, no expereince neccesarry! Earn free boba tea when you finish the website :)
-                </p>
-                
-
-                {/* <div className="flex justify-between w-full items-end space-x-4">
+              {/* <div className="flex justify-between w-full items-end space-x-4">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -260,11 +253,10 @@ export default function Home() {
                     </Button>
                   </a>
                 </div> */}
-              </MagicCard>
-            </div>
+            </MagicCard>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -39,13 +39,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            disableTransitionOnChange
+          attribute="class"
+          defaultTheme="light"
+          disableTransitionOnChange
         >
           <Banner />
-          {children}
-          <Navigation />
+          <div className="w-screen h-screen relative flex justify-center items-center">
+            {children}
+            <Navigation />{" "}
+          </div>
         </ThemeProvider>
       </body>
     </html>
