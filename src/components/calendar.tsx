@@ -129,7 +129,7 @@ export default function CalendarComponent({ googleCalendarId }: Props) {
               right: "subscribeButton",
             });
           } else {
-            this.changeView("listMonth");
+            this.changeView("dayGridMonth");
             this.setOption("headerToolbar", {
               left: "title",
               center: "",
@@ -157,7 +157,7 @@ export default function CalendarComponent({ googleCalendarId }: Props) {
                 right: "subscribeButton",
               });
             } else {
-              this.changeView("listMonth");
+              this.changeView("dayGridMonth");
               this.setOption("headerToolbar", {
                 left: "title",
                 center: "",
