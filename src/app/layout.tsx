@@ -44,7 +44,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Banner />
-          <div className="w-screen h-screen relative flex justify-center items-center">
+          <div className="w-screen max-w-screen h-screen relative flex justify-center items-center overflow-x-hidden">
             {children}
             <Navigation />{" "}
           </div>
