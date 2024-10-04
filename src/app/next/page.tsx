@@ -2,7 +2,7 @@ import ParticlesThemed from "@/components/particles-themed"
 import moment from "moment"
 
 export default function NextMeeting() {
-    const date = "2024-10-3 14:40:00";
+    const date = "2024-10-17 14:40:00";
 
     return (
         <div className="relative flex w-full h-screen flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
