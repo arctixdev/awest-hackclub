@@ -239,7 +239,7 @@ export default function Home() {
               </h1>
 
               <p className="py-4 xl:mr-12 text-lg">
-                October 31st at 2:40 PM in N134 We&apos;ll be learning to make
+                November 14th at 2:40 PM in N134 We&apos;ll be learning to make
                 cool websites, no expereince neccesarry! Earn free boba tea when
                 you finish the website :)
               </p>
